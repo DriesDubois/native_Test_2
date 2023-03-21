@@ -40,8 +40,32 @@ class _MainState extends State<Main> {
               });
             }),
           )
-        ,Text("There are ${characters.length} characters!")],),
+        ,Text("There are ${characters.length} characters!"),Container(height:500,child:CharacterList())],),
       ),
     );
   }
 }
+
+class CharacterList extends StatefulWidget {
+  @override
+  State createState() => _CharacterListState();
+}
+
+class _CharacterListState extends State<CharacterList> {
+
+  @override
+  Widget build(BuildContext context) => ListView.builder(
+    itemCount: characters.length,
+    itemBuilder: (BuildContext context, int index) {
+      return ListTile(
+        // leading: Image.asset(characters[index].imageAsset),
+        title: Text(characters[index]["name"]),
+      );
+    },
+  );
+
+
+
+}
+
+
