@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5246e08b-79d8-4422-bfe7-73f609db86dc" name="Changes" comment="oefening6 + cached images voor vraag 3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/detail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/detail.dart" afterDir="false" />
-    </list>
+    <list default="true" id="5246e08b-79d8-4422-bfe7-73f609db86dc" name="Changes" comment="oefening7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679384972546</updated>
-      <workItem from="1679384974791" duration="12138000" />
+      <workItem from="1679384974791" duration="12466000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit and push">
       <created>1679385062529</created>
@@ -106,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679395417057</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="oefening7">
+      <created>1679397633898</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679397633898</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +123,7 @@
     <MESSAGE value="oefening3" />
     <MESSAGE value="oefening5" />
     <MESSAGE value="oefening6 + cached images voor vraag 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="oefening6 + cached images voor vraag 3" />
+    <MESSAGE value="oefening7" />
+    <option name="LAST_COMMIT_MESSAGE" value="oefening7" />
   </component>
 </project>
