@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_application_2/models/enums.dart';
 import 'models/data.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class Main extends StatefulWidget {
 }
 
 class _MainState extends State<Main> {
-  Map<String, String> lijstMap = { 'all': "all", 'resistance': 'resistance', 'sith': "sith",'jediOrder':'jediOrder' };
+  Map<String, String> lijstMap = { 'all': "all", 'Resistance': 'Resistance', 'Sith': "Sith",'Jedi Order':'Jedi Order' };
   late String affiliation ="all";
   @override
   Widget build(BuildContext context) {
@@ -40,13 +41,16 @@ class _MainState extends State<Main> {
               });
             }),
           )
-        ,Text("There are ${characters.length} characters!"),Container(height:500,child:CharacterList())],),
+        ,Text("There are ${characters.length} characters!"),Container(height:500,child:CharacterList(affiliation))],),
       ),
     );
   }
 }
 
 class CharacterList extends StatefulWidget {
+  final String affiliation;
+  const CharacterList (this.affiliation);
+
   @override
   State createState() => _CharacterListState();
 }
@@ -57,11 +61,19 @@ class _CharacterListState extends State<CharacterList> {
   Widget build(BuildContext context) => ListView.builder(
     itemCount: characters.length,
     itemBuilder: (BuildContext context, int index) {
+      if (widget.affiliation=="all"){
       return ListTile(
         // leading: Image.asset(characters[index].imageAsset),
         title: Text(characters[index]["name"]),
       );
-    },
+    } else {
+        if (characters[index]["affiliations"].contains(widget.affiliation)){
+        return ListTile(
+          // leading: Image.asset(characters[index].imageAsset),
+          title: Text(characters[index]["name"]),
+        );}
+      }
+  },
   );
 
 
