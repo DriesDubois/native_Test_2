@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5246e08b-79d8-4422-bfe7-73f609db86dc" name="Changes" comment="oefening2 zonder foto">
+    <list default="true" id="5246e08b-79d8-4422-bfe7-73f609db86dc" name="Changes" comment="oefening3">
+      <change afterPath="$PROJECT_DIR$/lib/detail.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
@@ -16,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="oefening2" />
+        <entry key="$PROJECT_DIR$" value="oefening4" />
       </map>
     </option>
   </component>
@@ -61,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679384972546</updated>
-      <workItem from="1679384974791" duration="6327000" />
+      <workItem from="1679384974791" duration="8962000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit and push">
       <created>1679385062529</created>
@@ -84,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679389614729</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="oefening3">
+      <created>1679391639759</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679391639759</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +102,7 @@
     <MESSAGE value="initial commit and push" />
     <MESSAGE value="oefening1" />
     <MESSAGE value="oefening2 zonder foto" />
-    <option name="LAST_COMMIT_MESSAGE" value="oefening2 zonder foto" />
+    <MESSAGE value="oefening3" />
+    <option name="LAST_COMMIT_MESSAGE" value="oefening3" />
   </component>
 </project>
