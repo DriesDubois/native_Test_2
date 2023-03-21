@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/detail.dart';
 
@@ -90,9 +91,13 @@ class _CharacterListState extends State<CharacterList> {
                   context,
                   MaterialPageRoute(
                       builder: (context) =>
-                          DetailPage(characters[index]["name"])),
+                          DetailPage(characters[index]["name"],characters[index]["gender"],characters[index]["id"].toString())),
                 );
               },
+              leading: CachedNetworkImage(
+                placeholder: (context, url) => const CircularProgressIndicator(),
+                imageUrl: "https://picsum.photos/200?image="+characters[index]["id"].toString(),
+              ),
               title: Text(characters[index]["name"]),
             );
           } else {
@@ -105,9 +110,13 @@ class _CharacterListState extends State<CharacterList> {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            DetailPage(characters[index]["name"])),
+                            DetailPage(characters[index]["name"],characters[index]["gender"],characters[index]["id"].toString())),
                   );
                 },
+                leading: CachedNetworkImage(
+                  placeholder: (context, url) => const CircularProgressIndicator(),
+                  imageUrl: "https://picsum.photos/200?image="+characters[index]["id"].toString(),
+                ),
                 title: Text(characters[index]["name"]),
               );
             }
